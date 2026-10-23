@@ -1,6 +1,8 @@
 """Verify a newly exported demo PDF against the page contract and quote data."""
 import argparse
 import json
+import re
+import unicodedata
 from pathlib import Path
 from pypdf import PdfReader
 
@@ -15,9 +17,13 @@ for i, page in enumerate(reader.pages, 1):
     assert abs(float(page.mediabox.height) - 540) < .2, f'Page {i}: height'
     text = page.extract_text()
     assert text.strip(), f'Page {i}: empty text'
-    assert 'demo' in text.lower(), f'Page {i}: missing demo label'
+    # PDF extractors may insert spaces between tracked letters and decompose accents.
+    compact = re.sub(r'\s+', '', unicodedata.normalize('NFC', text)).casefold()
+    assert 'demo' in compact, f'Page {i}: missing demo label; extracted={text[:500]!r}'
     texts.append(text)
 combined = '\n'.join(texts)
+compact_combined = re.sub(r'\s+', '', unicodedata.normalize('NFC', combined)).casefold()
 for value in ('Lắng lại giữa nhịp đô thị', 'Sofa cong', '33.440.000', '6.200.000', '39.640.000', 'đế gỗ tông nâu sẫm'):
-    assert value in combined, f'Missing expected text: {value}'
+    expected = re.sub(r'\s+', '', unicodedata.normalize('NFC', value)).casefold()
+    assert expected in compact_combined, f'Missing expected text: {value}'
 print(json.dumps({'ok': True, 'page_count': 6, 'size_pt': [960, 540], 'text_and_prices': 'pass'}))

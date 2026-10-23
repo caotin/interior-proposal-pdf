@@ -42,6 +42,8 @@ pdftoppm -scale-to 1600 -png project/proposal.pdf project/qa/pdf-page
 
 With pypdf, compare page count against `render-report.json`, check page sizes within approximately 0.2 pt, require non-empty pages, and inspect extracted language-specific text, item IDs, and final prices. A nonzero PDF file size is insufficient verification.
 
+PDF extraction can insert spaces between tracked letters and return decomposed Unicode accents. Normalize Unicode composition and extraction-added whitespace when matching expected text; retain the original extraction for diagnosis. Do not interpret extractor spacing alone as a visual layout defect.
+
 Use a contact sheet for document rhythm and navigation. Inspect readable PDF renders for each distinct layout and every suspicious page, and review new renders after corrections. QA notes should state the actual pages reviewed, remaining unknowns, and image-resolution limits.
 
 ## Deliverable layout
