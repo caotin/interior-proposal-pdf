@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interior Proposal PDF"
+  short_description: "Interior proposals with AI imagery and HTML-to-PDF export"
+  default_prompt: "Use $interior-proposal-pdf to create an interior proposal with planned content, consistent AI imagery, verified quotation data, and a polished PDF exported from HTML."

@@ -1,0 +1,42 @@
+{
+  "currency": "VND",
+  "tax_mode": "included",
+  "vat_rate": "0",
+  "discount_vnd": 0,
+  "groups": [
+    {
+      "id": "living",
+      "name": "Phòng khách",
+      "subtotal_vnd": 39640000
+    }
+  ],
+  "items": [
+    {
+      "id": "01",
+      "group_id": "living",
+      "name": "Sofa cong",
+      "unit": "md",
+      "quantity": "3.8",
+      "unit_price_vnd": 8800000,
+      "amount_vnd": 33440000,
+      "dimensions_mm": [
+        3800
+      ],
+      "quantity_basis": "Khối lượng và chiều dài giả định cho DEMO, không dùng thi công.",
+      "source": "Brief kiểm thử: dữ liệu DEMO giả định, đơn giá đã gồm VAT."
+    },
+    {
+      "id": "02",
+      "group_id": "living",
+      "name": "Bàn nước",
+      "unit": "cái",
+      "quantity": "1",
+      "unit_price_vnd": 6200000,
+      "amount_vnd": 6200000,
+      "source": "Brief kiểm thử: dữ liệu DEMO giả định, đơn giá đã gồm VAT."
+    }
+  ],
+  "subtotal_vnd": 39640000,
+  "vat_vnd": 0,
+  "total_vnd": 39640000
+}

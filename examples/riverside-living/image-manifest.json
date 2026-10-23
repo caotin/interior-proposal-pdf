@@ -1,0 +1,45 @@
+{
+  "style": "Japandi; warm ivory, light oak, olive, dark brown sofa base, warm natural light; fictional riverside living room",
+  "images": [
+    {
+      "id": "living-hero-01",
+      "role": "room",
+      "page_ids": [
+        "cover",
+        "concept-materials",
+        "living-solution",
+        "process"
+      ],
+      "item_ids": [
+        "01",
+        "02"
+      ],
+      "aspect_ratio": "16:9",
+      "prompt": "Create one refined photorealistic interior visualization for a Vietnamese Japandi interior design proposal. Landscape 16:9 composition. A serene sunlit apartment living room: a distinctive crescent curved sofa upholstered in warm ivory linen, low dark walnut recessed base, two olive green linen cushions; organic solid oak coffee table with four round legs; light oak slatted ceiling beams; cream limewash walls; natural jute rug; sheer linen curtains and timber blinds; balcony plants visible on the right, distant soft river view. Minimal, premium, plausible buildable furniture proportions. Late afternoon warm natural light, architectural photography, 35mm lens at human eye level, subtle filmic tones. Keep the left upper quarter visually calm for a title overlay added later in HTML. No writing, typography, watermarks, labels, dimensions or logos. This is a concept illustration, not a photo of a real project.",
+      "reference_ids": [],
+      "source": "ai-generated with OpenAI ImageGen for this project",
+      "status": "placed",
+      "local_path": "assets/images/living-hero-01.png",
+      "review_notes": "Reviewed for coherent ivory upholstery, olive cushions, curved silhouette, and dark wood base. AI interpretation; not a verified manufacturing specification."
+    },
+    {
+      "id": "sofa-studio-01",
+      "role": "product",
+      "page_ids": [
+        "sofa-01"
+      ],
+      "item_ids": [
+        "01"
+      ],
+      "aspect_ratio": "4:3",
+      "prompt": "Create a premium studio product image of the EXACT curved ivory sofa shown in the supplied room image. Isolate the sofa only, with its two olive cushions. Preserve the crescent silhouette, softly rounded arms, warm ivory textured upholstery and low continuous dark walnut plinth base from this reference. Three-quarter front view, full sofa visible including all edges, generous clear margin around object, warm pale beige seamless studio background, soft realistic contact shadow. Landscape 4:3 composition. Remove the room, coffee table, lamps, plants and every other object. No text, dimensions, logos, borders or watermark. This is a concept illustration for an interior proposal; do not alter the sofa into a different design.",
+      "reference_ids": [
+        "living-hero-01"
+      ],
+      "source": "ai-generated with OpenAI ImageGen for this project",
+      "status": "placed",
+      "local_path": "assets/images/sofa-studio-01.png",
+      "review_notes": "Reviewed for coherent ivory upholstery, olive cushions, curved silhouette, and dark wood base. AI interpretation; not a verified manufacturing specification."
+    }
+  ]
+}

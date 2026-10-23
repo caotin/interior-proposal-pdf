@@ -1,0 +1,10 @@
+{
+  "name": "interior-proposal-pdf-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Development dependencies for the Interior Proposal PDF Agent Skill",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test tests/render.test.mjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}
